@@ -1,0 +1,38 @@
+class Item():
+
+    def __init__(self, item_name):
+        self.name = item_name
+        self.description = None
+        self.room_location = {}
+
+    def set_description(self, item_description):
+        self.description = item_description
+
+    def get_description(self):
+        return self.description
+
+    def set_name(self, item_name):
+        self.name = item_name
+
+    def get_name(self):
+        return self.name
+
+    def describe(self):
+        print( self.description )
+
+    def room_loc(self, item_in_room, item):
+        self.room_location[item] = item_in_room
+        
+    def get_details(self):
+        print("You are in " + self.room_location)
+        for item in self.room_location:
+            room = self.room_location[item]
+            print("Do you want to look for the" + item + " in the " + room.get_name()) 
+
+    def look(self, item):
+        if item in self.room_location:
+            print("you found item")
+            return self.room_location[item]
+        else:
+            print("item not in room ")
+            return self
