@@ -1,5 +1,5 @@
 # Simple_OOP_rpg_game
-This is a simple role player game made in python to understand object oriented programming.
+This is a simple text based role player game made in python to understand object oriented programming.
 Made whilst participating in the future learn tutorial/course https://www.futurelearn.com/courses/object-oriented-principles/
 
 
